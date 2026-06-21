@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router";
+import HomePage from "../pages/HomePage"
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className="text-7xl">Hello World</div>,
+    element: <HomePage />
   },
 ]);
 
