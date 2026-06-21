@@ -1,3 +1,4 @@
+import BestSellers from '../components/BestSellers'
 import FeaturedProducts from '../components/FeaturedProducts'
 import HeroSection from '../components/HeroSection'
 import Navigation from '../components/Navigation'
@@ -12,6 +13,7 @@ export default function HomePage() {
             {/* <Navigation /> */}
             <HeroSection />
             <FeaturedProducts />
+            <BestSellers />
 
         </div>
     )
