@@ -1,3 +1,4 @@
+import FeaturedProducts from '../components/FeaturedProducts'
 import HeroSection from '../components/HeroSection'
 import Navigation from '../components/Navigation'
 
@@ -10,6 +11,7 @@ export default function HomePage() {
             <SimpleNav />
             {/* <Navigation /> */}
             <HeroSection />
+            <FeaturedProducts />
 
         </div>
     )

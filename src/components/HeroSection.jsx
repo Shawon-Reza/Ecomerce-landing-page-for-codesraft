@@ -101,7 +101,9 @@ export default function HeroSection() {
                                 transition={{ duration: 4, repeat: Infinity }}
                                 className="absolute inset-0 flex items-center justify-center"
                             >
-                                <div className="text-7xl">⌚</div>
+                                <div className="text-7xl">
+                                    <img src="https://m.media-amazon.com/images/I/810iBorUbJL._AC_SL1500_.jpg" alt="Watch box" className='w-full h-full object-cover' />
+                                </div>
                             </motion.div>
                         </div>
 
