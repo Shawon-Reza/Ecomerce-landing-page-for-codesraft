@@ -26,7 +26,7 @@ export default function WhyChooseUs() {
   ]
 
   return (
-    <section className="py-20 bg-gradient-to-b from-neutral-800 via-neutral-900 to-black">
+    <section className="py-20 bg-[#D8D1CB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -35,11 +35,11 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-yellow-500 text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="font-body text-stone-600 text-sm font-semibold uppercase tracking-widest mb-4">
             Why Us
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl text-white mb-4">Why Choose Chronos</h2>
-          <p className="font-body text-gray-400 max-w-2xl mx-auto">
+          <h2 className="font-display text-4xl sm:text-5xl text-stone-900 mb-4">Why Choose Chronos</h2>
+          <p className="font-body text-stone-600 max-w-2xl mx-auto">
             We&apos;re not just selling watches. We&apos;re offering an experience of luxury and craftsmanship.
           </p>
         </motion.div>
@@ -54,20 +54,20 @@ export default function WhyChooseUs() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="group relative bg-neutral-800/50 border border-yellow-500/20 rounded-lg p-8 hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/10 transition-all duration-300"
+                className="group relative bg-white border border-stone-200 rounded-lg p-8 hover:border-stone-400 hover:shadow-lg hover:shadow-stone-300/50 transition-all duration-700 hover:scale-105"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-stone-100 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 <div className="relative z-10">
                   <motion.div
                     whileHover={{ scale: 1.1, rotate: 5 }}
-                    className="w-16 h-16 bg-yellow-500/10 border border-yellow-500/30 rounded-lg flex items-center justify-center mb-4 group-hover:border-yellow-500 transition-colors"
+                    className="w-16 h-16 bg-stone-50 border border-stone-200 rounded-lg flex items-center justify-center mb-4 group-hover:border-stone-400 transition-colors"
                   >
-                    <Icon className="text-yellow-500 text-2xl" />
+                    <Icon className="text-amber-600 text-2xl" />
                   </motion.div>
 
-                  <h3 className="font-display text-xl text-white mb-2">{feature.title}</h3>
-                  <p className="font-body text-gray-400 text-sm leading-relaxed">
+                  <h3 className="font-display text-xl text-stone-800 mb-2">{feature.title}</h3>
+                  <p className="font-body text-stone-600 text-sm leading-relaxed">
                     {feature.description}
                   </p>
                 </div>
@@ -81,23 +81,23 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 bg-neutral-800/50 border border-yellow-500/20 rounded-lg p-10"
+          className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 bg-white shadow-sm border border-stone-200 rounded-lg p-10"
         >
           <div className="text-center">
-            <p className="font-display text-4xl text-yellow-500 mb-2">50K+</p>
-            <p className="font-body text-gray-400 text-sm">Satisfied Customers</p>
+            <p className="font-display text-4xl text-amber-600 mb-2">50K+</p>
+            <p className="font-body text-stone-600 text-sm">Satisfied Customers</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-4xl text-yellow-500 mb-2">500+</p>
-            <p className="font-body text-gray-400 text-sm">Products in Stock</p>
+            <p className="font-display text-4xl text-amber-600 mb-2">500+</p>
+            <p className="font-body text-stone-600 text-sm">Products in Stock</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-4xl text-yellow-500 mb-2">99%</p>
-            <p className="font-body text-gray-400 text-sm">Customer Satisfaction</p>
+            <p className="font-display text-4xl text-amber-600 mb-2">99%</p>
+            <p className="font-body text-stone-600 text-sm">Customer Satisfaction</p>
           </div>
           <div className="text-center">
-            <p className="font-display text-4xl text-yellow-500 mb-2">24/7</p>
-            <p className="font-body text-gray-400 text-sm">Customer Support</p>
+            <p className="font-display text-4xl text-amber-600 mb-2">24/7</p>
+            <p className="font-body text-stone-600 text-sm">Customer Support</p>
           </div>
         </motion.div>
       </div>

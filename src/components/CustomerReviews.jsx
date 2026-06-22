@@ -30,7 +30,7 @@ export default function CustomerReviews() {
   ]
 
   return (
-    <section id="reviews" className="py-20 bg-neutral-900">
+    <section id="reviews" className="py-20 bg-[#FFFFE3]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -39,11 +39,11 @@ export default function CustomerReviews() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-yellow-500 text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="font-body text-amber-600 text-sm font-semibold uppercase tracking-widest mb-4">
             Testimonials
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl text-white mb-4">What Our Customers Say</h2>
-          <p className="font-body text-gray-400 max-w-2xl mx-auto">
+          <h2 className="font-display text-4xl sm:text-5xl text-gray-900 mb-4">What Our Customers Say</h2>
+          <p className="font-body text-gray-600 max-w-2xl mx-auto">
             Read authentic reviews from our satisfied customers around the world.
           </p>
         </motion.div>
@@ -56,10 +56,10 @@ export default function CustomerReviews() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.15, duration: 0.6 }}
-              className="relative bg-gradient-to-b from-neutral-800 to-neutral-900 border border-yellow-500/20 rounded-lg p-8 hover:border-yellow-500/50 hover:shadow-lg hover:shadow-yellow-500/10 transition-all duration-300"
+              className="relative bg-white shadow-xl  border border-gray-200 rounded-xl p-8 hover:border-yellow-400 hover:shadow-2xl hover:shadow-yellow-400/15 transition-all duration-700 hover:scale-105"
             >
               {/* Quote Icon */}
-              <FaQuoteLeft className="absolute top-4 right-4 text-yellow-500/20 text-4xl" />
+              <FaQuoteLeft className="absolute top-4 right-4 text-amber-400/30 text-4xl" />
 
               {/* Rating */}
               <div className="flex text-yellow-500 mb-4">
@@ -69,16 +69,16 @@ export default function CustomerReviews() {
               </div>
 
               {/* Text */}
-              <p className="font-body text-gray-300 mb-6 leading-relaxed">
+              <p className="font-body text-gray-600 mb-6 leading-relaxed">
                 &quot;{review.text}&quot;
               </p>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-yellow-500/20">
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
                 <div className="text-3xl">{review.image}</div>
                 <div>
-                  <p className="font-display text-white">{review.name}</p>
-                  <p className="font-body text-gray-400 text-sm">{review.title}</p>
+                  <p className="font-display text-gray-900">{review.name}</p>
+                  <p className="font-body text-gray-500 text-sm">{review.title}</p>
                 </div>
               </div>
             </motion.div>
@@ -92,15 +92,15 @@ export default function CustomerReviews() {
           transition={{ delay: 0.4, duration: 0.6 }}
           className="mt-16 text-center"
         >
-          <div className="inline-flex items-center gap-4 bg-neutral-800/50 border border-yellow-500/20 rounded-lg px-8 py-4">
+          <div className="inline-flex items-center gap-4 bg-white border border-gray-200 rounded-xl px-8 py-4 shadow-md">
             <div>
-              <p className="font-display text-3xl text-yellow-500">4.9/5</p>
-              <p className="font-body text-gray-400 text-sm">Average Rating</p>
+              <p className="font-display text-3xl text-amber-500">4.9/5</p>
+              <p className="font-body text-gray-500 text-sm">Average Rating</p>
             </div>
-            <div className="hidden sm:block w-px h-12 bg-yellow-500/20"></div>
+            <div className="hidden sm:block w-px h-12 bg-gray-200"></div>
             <div>
-              <p className="font-display text-3xl text-yellow-500">2.5K+</p>
-              <p className="font-body text-gray-400 text-sm">Customer Reviews</p>
+              <p className="font-display text-3xl text-amber-500">2.5K+</p>
+              <p className="font-body text-gray-500 text-sm">Customer Reviews</p>
             </div>
           </div>
         </motion.div>
