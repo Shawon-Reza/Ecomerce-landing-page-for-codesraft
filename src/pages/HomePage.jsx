@@ -13,7 +13,7 @@ import WhyChooseUs from '../components/WhyChooseUs'
 export default function HomePage() {
     return (
         <div className="min-h-screen">
-            <SimpleNav />c:\Users\21300\Downloads\e-commerce-landing-page (3)\src\pages\CheckoutPage.jsx
+            <SimpleNav />
             {/* <Navigation /> */}
             <HeroSection />
             <FeaturedProducts />

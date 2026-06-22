@@ -6,7 +6,7 @@ export default function SimpleNav() {
   const totalItems = useCartStore((state) => state.getTotalItems())
 
   return (
-    <nav className="bg-gray-900 text-white p-4">
+    <nav className="bg-[#0F1624] text-white p-4">
       <div className="flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           REZA
