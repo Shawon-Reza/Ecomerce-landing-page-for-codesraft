@@ -28,7 +28,7 @@ export default function FeaturedProducts() {
   }
 
   return (
-    <section id="featured" className="py-20 bg-gradient-to-b from-black via-neutral-900 to-neutral-800">
+    <section id="featured" className="py-20 bg-[#CBCBCB]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -37,11 +37,11 @@ export default function FeaturedProducts() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="font-body text-yellow-500 text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="font-body text-gray-500 text-sm font-semibold uppercase tracking-widest mb-4">
             Our Collection
           </p>
-          <h2 className="font-display text-4xl sm:text-5xl text-white mb-4">Featured Timepieces</h2>
-          <p className="font-body text-gray-400 max-w-2xl mx-auto">
+          <h2 className="font-display text-4xl sm:text-5xl text-gray-900 mb-4">Featured Timepieces</h2>
+          <p className="font-body text-gray-600 max-w-2xl mx-auto">
             Handpicked selections from our premium collection. Each watch is a masterpiece of engineering and design.
           </p>
         </motion.div>
@@ -57,19 +57,19 @@ export default function FeaturedProducts() {
           {featured.map((product) => (
             <motion.div key={product.id} variants={itemVariants}>
               <Link to={`/product/${product.id}`}>
-                <div className="group relative bg-gradient-to-b from-neutral-800 to-neutral-900 rounded-lg overflow-hidden border border-yellow-500/20 hover:border-yellow-500/50 transition-all duration-700 hover:scale-102 h-full flex flex-col hover:shadow-lg hover:shadow-yellow-500/20 ">
+                <div className="group relative bg-white rounded-lg overflow-hidden border border-gray-200 hover:border-yellow-500/60 transition-all duration-700 hover:scale-102 h-full flex flex-col hover:shadow-xl hover:shadow-yellow-500/15">
                   {/* Image Container */}
-                  <div className="relative h-64 bg-neutral-700 overflow-hidden">
-                    <div className="w-full h-full bg-gradient-to-br from-yellow-500/10 to-transparent flex items-center justify-center text-6xl">
+                  <div className="relative h-64 bg-gray-100 overflow-hidden">
+                    <div className="w-full h-full flex items-center justify-center">
                       <img src={product.image} alt={product.name} className='w-full h-full object-cover' />
                     </div>
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                   </div>
 
                   {/* Content */}
                   <div className="p-4 flex flex-col flex-grow">
                     <div className="flex items-start justify-between mb-2">
-                      <h3 className="font-display text-lg text-white group-hover:text-yellow-500 transition-colors">
+                      <h3 className="font-display text-lg text-gray-900 group-hover:text-yellow-600 transition-colors">
                         {product.name}
                       </h3>
                       {product.bestSeller && (
@@ -79,7 +79,7 @@ export default function FeaturedProducts() {
                       )}
                     </div>
 
-                    <p className="font-body text-gray-400 text-sm mb-3">{product.category}</p>
+                    <p className="font-body text-gray-500 text-sm mb-3">{product.category}</p>
 
                     {/* Rating */}
                     <div className="flex items-center gap-1 mb-3">
@@ -88,10 +88,10 @@ export default function FeaturedProducts() {
                           <FaStar key={i} size={14} />
                         ))}
                       </div>
-                      <span className="font-body text-gray-400 text-xs">({product.reviews})</span>
+                      <span className="font-body text-gray-500 text-xs">({product.reviews})</span>
                     </div>
 
-                    <p className="font-body text-gray-400 text-sm flex-grow line-clamp-2 mb-3">
+                    <p className="font-body text-gray-600 text-sm flex-grow line-clamp-2 mb-3">
                       {product.description}
                     </p>
 
@@ -124,7 +124,7 @@ export default function FeaturedProducts() {
         >
           <Link
             to="/#featured"
-            className="group inline-flex items-center gap-2 px-8 py-3 border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black font-bold rounded transition-all duration-300"
+            className="group inline-flex items-center gap-2 px-8 py-3 border-2 border-yellow-500 text-gray-900 bg-yellow-500  hover:text-black font-bold rounded-xl transition-all duration-700 hover:scale-105"
           >
             View All Products
           </Link>

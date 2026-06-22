@@ -9,7 +9,7 @@ export default function SimpleNav() {
     <nav className="bg-gray-900 text-white p-4">
       <div className="flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
-          CHRONOS
+          REZA
         </Link>
         <div className="flex gap-4">
           <Link to="/" className="hover:text-yellow-500">Home</Link>

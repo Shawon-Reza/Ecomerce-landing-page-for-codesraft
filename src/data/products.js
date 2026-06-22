@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    name: 'Chronos Midnight Elite',
+    name: 'Reza Midnight Elite',
     category: 'Sport',
     price: 2899,
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpJLqIRfow_Esqr9-bxUUwpFVFQvxf1OsebI83b9_JJQ&s=10',

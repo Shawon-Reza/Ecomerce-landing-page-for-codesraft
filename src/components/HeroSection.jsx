@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa'
 
 export default function HeroSection() {
     return (
-        <section className="relative min-h-screen bg-gradient-to-br from-neutral-900 via-neutral-800 to-black overflow-hidden flex items-center justify-center">
+        <section className="relative min-h-screen bg-[#5C5C5C] overflow-hidden flex items-center justify-center">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-500 rounded-full blur-3xl"></div>
