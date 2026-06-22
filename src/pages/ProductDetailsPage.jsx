@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { FaStar, FaShoppingCart, FaArrowLeft, FaCheck } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules'
+import { FreeMode, Thumbs } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/free-mode'
-import 'swiper/css/navigation'
+
 import 'swiper/css/thumbs'
 import { products } from '../data/products'
 import { useCartStore } from '../store/cartStore'
@@ -79,7 +79,7 @@ export default function ProductDetailsPage() {
 
             {/* Thumbnail */}
             <Swiper
-              modules={[FreeMode, Navigation, Thumbs]}
+              modules={[FreeMode, Thumbs]}
               onSwiper={setThumbsSwiper}
               slidesPerView={4}
               freeMode={true}

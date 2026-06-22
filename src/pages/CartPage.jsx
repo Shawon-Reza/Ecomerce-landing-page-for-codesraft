@@ -4,6 +4,7 @@ import { FaTrash, FaArrowLeft, FaArrowRight, FaShoppingCart } from 'react-icons/
 import { useCartStore } from '../store/cartStore'
 import Footer from '../components/Footer'
 import SimpleNav from '../components/SimpleNav'
+import Navigation from '../components/Navigation'
 
 export default function CartPage() {
   const items = useCartStore((state) => state.items)
@@ -20,7 +21,8 @@ export default function CartPage() {
   if (items.length === 0) {
     return (
       <div className="min-h-screen bg-[#F5F4F4] flex flex-col">
-        <SimpleNav />
+        {/* <SimpleNav /> */}
+        <Navigation />
 
         <div className="flex-grow flex items-center justify-center">
           <motion.div

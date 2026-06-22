@@ -74,7 +74,8 @@ export default function HeroSection() {
                             className="grid grid-cols-3 gap-6 mt-16 pt-8 border-t border-yellow-500/30"
                         >
                             <div>
-                                <p className="font-display text-3xl text-yellow-500">500+</p>
+                                <p className="font-display text-3xl text-yellow-500">
+                                    500+</p>
                                 <p className="font-body text-gray-400 text-sm">Happy Clients</p>
                             </div>
                             <div>
