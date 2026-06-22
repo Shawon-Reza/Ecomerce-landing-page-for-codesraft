@@ -1,16 +1,45 @@
-# React + Vite
+# E-Commerce Cart Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This is a modern React-based e-commerce application with a fully functional shopping cart. The project uses **Zustand** for simple, performant, and persistent state management. The application is deployed on Netlify.
 
-Currently, two official plugins are available:
+## Technologies Used
+- **React** — Frontend library
+- **Zustand** + **persist** middleware — State management (with localStorage persistence)
+- **Vite** — Build tool and development server
+- **Netlify** — Deployment platform
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Project Setup
 
-## React Compiler
+### Prerequisites
+- Node.js (version 18 or higher recommended)
+- npm or yarn
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Installation
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   ```bash
+   git clone <your-repository-url>
+   cd <project-folder>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:Bashnpm install
+Run the development server:Bashnpm run dev
+Open your browser and go to http://localhost:5173 (or the port shown in your terminal).
+
+Build for Production
+Bashnpm run build
+The production build will be generated in the dist/ folder.
+Deployment
+This project is deployed on Netlify.
+
+Build Command: npm run build
+Publish Directory: dist
+
+## Features
+
+- Add items to cart (automatically handles duplicate items by increasing quantity)
+- Remove items from cart
+- Update item quantity
+- Clear entire cart
+- Real-time calculation of total price and total number of items
+- Cart data persists across browser sessions using localStorage
