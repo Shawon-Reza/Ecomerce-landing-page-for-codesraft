@@ -1,5 +1,5 @@
 import { Link } from 'react-router'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaEnvelopeOpen, FaGithub } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <span className="font-display text-2xl font-bold text-yellow-500">⌚ Reza
+              <span className="font-display text-2xl font-bold text-yellow-500"> Reza Crafts
 
               </span>
             </Link>
@@ -25,17 +25,52 @@ export default function Footer() {
               Luxury timepieces crafted for those who appreciate the finer things in life. Premium watches, premium service.
             </p>
             <div className="flex gap-4 mt-4">
-              <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
+              {/* Facebook */}
+              <a
+                href="https://web.facebook.com/shawonreza.dev"
+                target='_blank'
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-500 transition-colors"
+              >
                 <FaFacebook />
               </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
-                <FaInstagram />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-yellow-500 transition-colors">
+
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/shawon-reza/"
+                target='_blank'
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-500 transition-colors"
+              >
                 <FaLinkedin />
+              </a>
+
+              {/* GitHub */}
+              <a
+                href="https://github.com/Shawon-Reza"
+                target='_blank'
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-500 transition-colors"
+              >
+                <FaGithub />
+              </a>
+
+              {/* Email */}
+              <a
+                href="mailto:shawon_reza_dev@gmail.com"
+                className="text-gray-400 hover:text-yellow-500 transition-colors"
+              >
+                <FaEnvelopeOpen />
+              </a>
+
+              {/* WhatsApp */}
+              <a
+                href="https://wa.me/8801822531281"
+                target='_blank'
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-yellow-500 transition-colors"
+              >
+                <FaWhatsapp />
               </a>
             </div>
           </motion.div>
@@ -113,21 +148,40 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-yellow-500 mt-1 flex-shrink-0" />
                 <p className="font-body text-gray-400 text-sm">
-                  123 Luxury Avenue, Swiss City 8000
+                  Dhaka, Bangladesh
                 </p>
               </div>
+
               <div className="flex items-center gap-3">
                 <FaPhone className="text-yellow-500 flex-shrink-0" />
-                <a href="tel:+41123456789" className="font-body text-gray-400 hover:text-yellow-500 transition-colors text-sm">
-                  +41 123 456 789
+                <a
+                  href="tel:+8801822531281"
+                  className="font-body text-gray-400 hover:text-yellow-500 transition-colors text-sm"
+                >
+                  01822-531281
                 </a>
               </div>
+
               <div className="flex items-center gap-3">
                 <FaEnvelope className="text-yellow-500 flex-shrink-0" />
-                <a href="mailto:info@reza
-                .com" className="font-body text-gray-400 hover:text-yellow-500 transition-colors text-sm">
-                  info@reza
-                  .com
+                <a
+                  href="mailto:shawon_reza_dev@gmail.com"
+                  className="font-body text-gray-400 hover:text-yellow-500 transition-colors text-sm"
+                >
+                  shawon_reza_dev@gmail.com
+                </a>
+              </div>
+
+              {/* Optional: WhatsApp */}
+              <div className="flex items-center gap-3">
+                <FaWhatsapp className="text-yellow-500 flex-shrink-0" />
+                <a
+                  href="https://wa.me/8801822531281"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-body text-gray-400 hover:text-yellow-500 transition-colors text-sm"
+                >
+                  +880 1822-531281 (WhatsApp)
                 </a>
               </div>
             </div>
@@ -138,7 +192,7 @@ export default function Footer() {
         <div className="border-t border-yellow-500/10 pt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center md:text-left">
             <p className="font-body text-gray-400 text-sm">
-              &copy; {currentYear} reza
+              &copy; {currentYear} Reza
               Luxury Watches. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-4">

@@ -18,7 +18,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.05 }}
               className="font-display text-3xl font-bold text-yellow-500 tracking-wider"
             >
-              ⌚ CHRONOS
+              Reza Crafts
             </motion.div>
           </Link>
 

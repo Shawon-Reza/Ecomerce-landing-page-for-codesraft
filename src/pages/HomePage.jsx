@@ -13,8 +13,8 @@ import WhyChooseUs from '../components/WhyChooseUs'
 export default function HomePage() {
     return (
         <div className="min-h-screen">
-            <SimpleNav />
-            {/* <Navigation /> */}
+            {/* <SimpleNav /> */}
+            <Navigation />
             <HeroSection />
             <FeaturedProducts />
             <BestSellers />
