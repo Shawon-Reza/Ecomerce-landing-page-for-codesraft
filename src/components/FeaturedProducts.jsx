@@ -29,6 +29,7 @@ export default function FeaturedProducts() {
 
   return (
     <section id="featured" className="py-20 bg-[#CBCBCB]">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div
@@ -123,7 +124,7 @@ export default function FeaturedProducts() {
           className="text-center mt-16"
         >
           <Link
-            to="/#featured"
+            to="/all_products"
             className="group inline-flex items-center gap-2 px-8 py-3 border-2 border-yellow-500 text-gray-900 bg-yellow-500  hover:text-black font-bold rounded-xl transition-all duration-700 hover:scale-105"
           >
             View All Products

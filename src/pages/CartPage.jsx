@@ -89,7 +89,9 @@ export default function CartPage() {
                   <div className="flex gap-6">
                     {/* Image */}
                     <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center text-3xl flex-shrink-0">
-                      ⌚
+                      <img src={
+                        item.image || "No Image"
+                      } alt="watch" className='w-full h-full object-cover rounded-lg' />
                     </div>
 
                     {/* Details */}
